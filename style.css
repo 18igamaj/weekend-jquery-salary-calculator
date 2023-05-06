@@ -1,0 +1,90 @@
+/* I got this from the affirmation assignment--sorry?
+    At least, I made some changes! */
+
+
+body {
+    background-color: #f4acac;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+  }
+  
+  
+  /* MINIMAL FLEX LAYOUT */
+  html, body {
+    min-height: 100vh;
+    margin: auto;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    height: 8em;
+    background-color: #7a7a7a;
+    text-align: center;
+  }
+  main {
+    flex: auto;
+    max-width: 80%;
+    margin: auto;
+  }
+  #emoji-area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  footer {
+    height: 8em;
+    background-color: #7a7a7a;
+    text-align: center;
+  }
+  
+  
+  /* HEADER/FOOTER */
+  header, footer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  /* ADD AFFIRMATION FORM */
+  input {
+    padding: .5em;
+    width: 150px;
+    background: #a48d8d;
+    border: 1px solid;
+  }
+  button {
+    padding: .5em;
+    width: 75px;
+  }
+  
+  /* AFFIRMATIONS TABLE */
+  table {
+    width: 100%;
+    text-align: left;
+  }
+  table, th, td {
+    border: 1px solid rgb(14, 9, 108);
+    border-collapse: collapse;
+    height: 2.15em;
+  }
+  th, td {
+    padding: .5em;
+    min-width: 3.5em;
+  }
+  thead {
+    background: #7a7a7a;
+    color: #fcfcfc;
+  }
+  tbody tr:nth-child(odd){
+    background: #fcfcfc;
+  }
+  tbody tr:nth-child(even){
+    background: #dcdcdc;
+  }

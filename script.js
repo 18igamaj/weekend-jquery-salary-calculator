@@ -1,11 +1,15 @@
 $(document).ready(onReady);
 
+//created my document
+
 function onReady() {
   $("#find-them").on("submit", handleEM);
   $('#table').on('click','.delete-button',handleDelete)
 }
 let totalMonth = 0
  
+//created my onReady function to run my functions 
+// on the dom!
 
 function handleEM(event) {
   event.preventDefault();
@@ -40,6 +44,9 @@ ${anSal}
 
 totalMonth+=Math.round(anSal/12)
 $('#tMon').text(totalMonth)
+if(totalMonth > 20000){
+$('#total-MS').css('background-color','red')
+}
 }
 
 function handleDelete(){
