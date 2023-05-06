@@ -38,10 +38,10 @@ ${anSal}
 <td><button class='delete-button'>❌</button></td>
 </tr>`);
 
-// totalMonth+=Math.round(anSal/12)
+totalMonth+=Math.round(anSal/12)
 $('#tMon').text(totalMonth)
 }
 
-// function handleDelete(){
-// 	this.closest('tr').remove()
-// }
+function handleDelete(){
+	this.closest('tr').remove()
+}
